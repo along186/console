@@ -2,7 +2,6 @@
 
 namespace Console\core;
 
-use Console\core\output\Ask;
 use Console\core\output\Descriptor;
 use Console\core\output\driver\Console;
 use Console\core\output\Question;
@@ -47,7 +46,7 @@ class Output
 
     public function __construct($driver = 'console')
     {
-        $class = '\\App\Tool\\Console\\output\\driver\\' . ucwords($driver);
+        $class = '\\Console\\core\\output\\driver\\' . ucwords($driver);
 
         $this->handle = new $class($this);
     }
