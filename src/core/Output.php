@@ -3,7 +3,6 @@
 namespace Console\core;
 
 use Console\core\output\Descriptor;
-use Console\coree\output\question\Confirmation;
 
 /**
  * Class Output
