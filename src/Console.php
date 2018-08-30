@@ -28,7 +28,7 @@ class Console
 
     private static $defaultCommands = [
         "Console\\core\\command\\Help",
-        "Console\\cores\\command\\Lists",
+        "Console\\core\\command\\Lists",
     ];
 
     public function __construct($name = 'UNKNOWN', $version = 'UNKNOWN')
