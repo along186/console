@@ -547,7 +547,7 @@ class Console
         $defaultCommands = [];
 
         foreach (self::$defaultCommands as $classname) {
-            if (class_exists($classname) && is_subclass_of($classname, "App\\Tool\\Console\\Command")) {
+            if (class_exists($classname) && is_subclass_of($classname, "Console\\core\\Command")) {
                 $defaultCommands[] = new $classname();
             }
         }
