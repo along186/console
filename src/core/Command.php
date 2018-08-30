@@ -11,7 +11,7 @@ class Command
 {
 
     /** @var  Console */
-    private $cli;
+    private $console;
     private $name;
     private $aliases = [];
     private $definition;
