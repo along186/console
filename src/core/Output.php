@@ -3,9 +3,6 @@
 namespace Console\core;
 
 use Console\core\output\Descriptor;
-use Console\core\output\driver\Console;
-use Console\core\output\Question;
-use Console\core\output\question\Choice;
 use Console\coree\output\question\Confirmation;
 
 /**

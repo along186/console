@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+define('DS','/');
+
+// 自动加载
+require_once __DIR__.'/vendor/autoload.php';
+
+Console\Console::init();

@@ -5,7 +5,7 @@ namespace Console\core;
 use Console\core\input\Argument;
 use Console\core\input\Definition;
 use Console\core\input\Option;
-use Console;
+use Console\Console;
 
 class Command
 {

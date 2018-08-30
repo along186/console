@@ -2,7 +2,7 @@
 
 namespace Console\core\output;
 
-use Console;
+use Console\Console;
 use Console\core\Command;
 use Console\core\input\Argument as InputArgument;
 use Console\core\input\Definition as InputDefinition;

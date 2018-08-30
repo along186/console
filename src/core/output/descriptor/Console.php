@@ -2,7 +2,7 @@
 
 namespace Console\core\output\descriptor;
 
-use Console as LongConsole;
+use Console\Console as LongConsole;
 use Console\core\Command;
 
 class Console
