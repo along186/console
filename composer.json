@@ -2,10 +2,7 @@
   "name": "along/console",
   "description": " This is a simple PHP console",
   "type": "library",
-  "minimum-stability": "stable",
-  "require": {
-    "php": ">=7.0.0"
-  },
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "Console\\": "src/"

@@ -50,13 +50,15 @@ class Console
             // 实例化console
             $console = new self('Xhj Console', '1.0.0');
             // 读取指令集
-            if (is_file(APP_CONFIG_PATH . 'command.php')) {
-                $commands = include APP_CONFIG_PATH . 'command.php';
-                if (is_array($commands)) {
-                    foreach ($commands as $command) {
-                        if (class_exists($command)) {
-                            // 注册指令
-                            $console->add(new $command());
+            if(defined('APP_CONFIG_PATH')) {
+                if (is_file(APP_CONFIG_PATH . 'command.php')) {
+                    $commands = include APP_CONFIG_PATH . 'command.php';
+                    if (is_array($commands)) {
+                        foreach ($commands as $command) {
+                            if (class_exists($command)) {
+                                // 注册指令
+                                $console->add(new $command());
+                            }
                         }
                     }
                 }
